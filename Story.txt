@@ -42,4 +42,249 @@ Story:  Unbekannter:
 	Professor:
 	Bist du bereit deinen Vater zu retten?
 	(Ja/Nein)
-	 
+
+
+
+
+
+
+
+
+Professor E.:
+	Ok!
+	Auf zur Drachenhöhle!
+
+	Du gehst zur Drachenhöhle,
+	Nach 2 Stunden kommst du endlich an.
+
+Name: 
+	Oh…
+	Das ist wohl die Drachenhöhle, von der mein Vater immer erzählt hat…
+	ein bisschen Angst habe ich schon…
+
+*Drachenbrüllen*
+
+Professor E.:
+	Los!
+	Geh rein bevor es zu spät ist!
+
+Bist du sicher dass du in die gefährliche Drachenhöhle gehen möchtest?
+(Ja/Nein)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In der Drachenhöhle
+
+Professor E.:
+	Der Drache scheint dich gar nicht töten zu wollen!
+	Aber er wird dir deinen Vater bestimmt auch nicht so einfach wieder geben.
+	Los!
+	Geh mal hin!
+
+Der Drache sieht dich
+*Drachenbrüllen*
+
+Drache: 
+	Hey!
+	Du da vorne!
+	Komm her!
+
+Drache:
+	Du bist sicher wegen deinem Vater hier.
+	Ich kann ihn dir nicht wiedergeben.
+	ES SEI DENN!
+	Du besiegst mich 3 mal nacheinander in Schere, Stein, Drache!
+	MUHAHAHAHAHAHAHA
+
+Professor E.:
+	Schere, Stein, Drache?
+	Was soll das denn sein!?
+	X, weißt du was das ist?
+
+X:
+	Mein Vater hat mir sehr oft von der gefährlichen Drachenhöhle erzählt…
+	Ich weiß alles über sie!
+
+Drache:
+	Also? 
+	Bist du bereit zu verlieren!?
+
+Möchtest du gegen den Drachen spielen?
+(Ja/Nein)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Drache:
+	Ok gut!
+	Du musst 3 mal nacheinander gewinnen, wenn ich auch nur 1 einziges mal gewinne, hast du verloren!
+	Drache frisst Stein, Schere sticht Drache ab, und Stein macht Schere kaputt, die Regeln kennst du ja.
+
+Du trittst 2 Schritte vor
+
+KAMPF!
+
+Spieler wählt 2 mal irgendwas und gewinnt 2 mal. Beim letzten mal verliert er gegen den Drachen und muss auf ein Abenteuer gehen um herauszufinden, wie er den Drachen 3 mal hintereinander besiegen kann!
+
+Drache:
+	Tja, ich wusste, dass ich gewinnen werde.
+	
+Drache:
+	Aber ich will mal nicht so sein…
+	Du hast 3 Tage zeit.
+
+Drache:
+	Trainiere und komm wieder, wenn du nach 3 Tagen nicht wieder hier bist und gegen mich gewinnst, fresse ich deinen Vater…
+
+Drache:
+	UND JETZT AB!
+
+Professer E.: 
+	Schnell, lass uns los gehen, wir haben nicht viel Zeit!
+
+Professor E.:
+	Ich kenn da ein paar Leute die uns vielleicht weiter helfen können…
+
+Professor E.: 
+	Walli…
+	Er sieht aus wie eine Wallnuss…
+	3 mal Hintereinander in der Schere Stein Papier Weltmeisterschaft gewonnen...
+
+Professor E.: 
+	Aber Schere Stein Papier ist was anderes als Schere Stein Drache, also ich weiß nicht ob er uns helfen kann.
+
+Professor E.:
+	Der zweite heißt Mallo…
+	Ich kenne ihn nicht so gut und denke nicht er wird uns helfen ohne was von uns zu erwarten, aber ich habe gehört, dass er sich früher oft ´mit dem Drachen zum Schere Stein Drache spielen getroffen hat.
+
+Professor E.: 
+	Und der letze…
+Professor E.:
+	Keiner weiß, ob er wirklich existiert...
+	
+Professor E.:
+	Sein Name ist D.
+	
+Professor E.:
+	D…
+	
+Professor E.:
+	Mehr kann ich zu seinem Namen nicht sagen…
+	Man sagt er hat eine besondere Bindung zum Drachen...
+	laut einer Legende kann man zu ihm kommen wenn man einen seltenen Draben-Käfer in den Fluss am Magischem Baum wirft…
+
+Professor E.: 
+	Ich kenne eine Person, die vielleicht ein bisschen mehr über ihn weiß…
+	Der Weg dahin wäre aber sehr weit und ich weiß nicht ob es sich lohnt...
+
+Professor E.:
+	Wo möchtest du als erstes hingehen?
+
+(Walli/Mallo/D)
+
+Wenn D: 
+
+Professor E.:
+	Bist du dir sicher?
+	Ich glaube das wäre zu riskant…
+	Lass uns erst mal woanders hingehen.
+
+Wenn Mallo.:
+	
+Professor E.:
+	Ok!
+	Auf zu Mallo!
+
+Professor E.: 
+	Es gibt 2 Wege, den Berg Pfad, ungefährlich, aber ein langer Weg zu ihm oder den 
+	Gift Weg, direkt durch den Gift Sumpf…
+	Schneller, aber voll mit giftigen Schlagen und Krokodilen.
+
+Professor E.: 
+	Welchen Weg möchtest du gehen?
+
+(bergpfad/Gift Weg)
+
+Wenn bergpfad:
+
+*Du läufst den Bergpfad entlang, nach einer Weile siehst, wie Mallo dir entgegen kommt.*
+
+Professor E.:
+	Das ist Mallo!
+	Sprich ihn an!
+
+Was möchtest du sagen? (Hallo!/ Ich wurde von Professor E. Geschickt/ Gib mir Tipps!)
+
+Du: antwort
+
+Wenn 1.:
+
+Mallo: 
+	Hallo!
+	Tut mir leid aber ich habe gerade nicht viel Zeit.
+	Du kannst mich morgen besuchen kommen. Ich wohne am Wald weg 12.
+
+Wenn 2.:
+Mallo:
+	Professor E.?
+	Ach ja…
+	Wir waren früher so gute Freunde…
+
+Mallo:
+	Aber ich habe gerade nicht so viel Zeit.
+	Besuch mich doch morgen mal. Ich wohne am Wald weg 12.
+
+Wenn 3.:
+Mallo:
+	Tipps? Was meinst du?
+	Ich würde dir ja helfen, aber habe momentan nicht viel Zeit.
+	Komm doch morgen mal bei mir vorbei. Ich wohne am Wald weg 12.
+
+Nach allen 3;
+Professor E.:
+	Anscheinend hat er keine Zeit, dann lass uns zu erst zu Walli gehen!
+
+Wenn Walli: Story geht weiter
+
+
+
+Hi! Hab viele Ideen für die Story. Ich dachte wir könnten das so machen dass D am ende quasi der Erschaffer des Drachen ist und der deswegen helfen kann ihn zu besiegen, weil der Drache früher nett war, aber jetzt nicht mehr und immer Leute entführt und tötet und so lol
