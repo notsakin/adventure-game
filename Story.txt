@@ -1,0 +1,45 @@
+Story:  Unbekannter:
+	Hallo! 
+	
+	Unbekannter:
+	Ich bin Professor E.
+
+	Professor E.:
+	Ich bin dein Begleiter!
+	Aber leider bin ich sehr vergesslich…
+	
+	Professor E.:
+	Wie heißt du nochmal? 
+
+	Namen eingeben
+
+	Professor E.:
+	Ahhhhh stimmt, Name. 
+	Ach ich bin schon so alt und vergesslich.
+
+	Professor E.:
+	Also…
+	Etwas schlimmes ist passiert…
+	Es tut mir sehr leid für dich :(…
+	
+	Professor E.:
+	Dein…
+	Vater…
+	Wurde…
+	Von dem großem blauen Drachen entführt…
+
+	Professor.: 
+	Er ist in der Drachen Höhle am Ende der Stadt…
+	Keiner kann ihn retten…
+
+	Professor.: 
+	Außer…
+
+	Professor: 
+	Du!
+	Du, Name, du kannst ihn retten!
+
+	Professor:
+	Bist du bereit deinen Vater zu retten?
+	(Ja/Nein)
+	 
