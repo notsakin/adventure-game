@@ -9,6 +9,7 @@ def newScreen():
     print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 
 def awatingInput(query, options, first, second, third, fourth):
+
     global  option1
     global  option2
     global  option3
@@ -82,13 +83,14 @@ textbox(2.5, 'Professor E.', 'Ich werde dein Begleiter sein.', '', '')
 textbox(1.5, 'Professor E.', 'Ich werde dein Begleiter sein.', 'Aber leider bin ich sehr vergesslich.', '')
 textbox(2, 'Professor E.', 'Ich werde dein Begleiter sein.', 'Aber leider bin ich sehr vergesslich.', 'Wie heißt du nochmal?')
 
-#playernameConfirm
+
+#playername
 newScreen()
 print('             Gebe nun deinen Namen ein.')
 playername = input('\n\n\n\n\n\n\n\n\n             >> ')
 newScreen()
 time.sleep(1.5)
-awatingInput('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \nsaas Um fortzufahren, bestätige mit', 1, 'Verstanden', '', '', '')
+awatingInput('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n Um fortzufahren, bestätige mit', 1, 'Verstanden', '', '', '')
 if choice == option1:
     newScreen()
     time.sleep(2)
@@ -96,6 +98,6 @@ if choice == option1:
     time.sleep(2.5)
     newScreen()
 
+
 #story
-# awatingInput('Willst du deinen Vater retten?', 2, 'Ja', 'Nein', '', '')
 input()
