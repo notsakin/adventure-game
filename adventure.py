@@ -1,12 +1,33 @@
 import time
 
-#startup
-print('Stelle dir eine Startmusik vor.')
-time.sleep(1)
 
 #deefinitons
 def newScreen():
     print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+
+def loading():
+    newScreen()
+    print('                                                                                                                    Loading.', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          |                            |', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+    newScreen()
+    print('                                                                                                                     Loading..', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          ||||||                       |', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+    newScreen()
+    print('                                                                                                                     Loading...', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          |||||||||||                  |', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+    newScreen()
+    print('                                                                                                                     Loading.', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          ||||||||||||||||             |', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+    newScreen()
+    print('                                                                                                                     Loading..', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          |||||||||||||||||||||        |', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+    newScreen()
+    print('                                                                                                                     Loading...', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          ||||||||||||||||||||||||||   |', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+    newScreen()
+    print('                                                                                                                     Loading.', '\n', '                                                                                                          +----------------------------+','\n', '                                                                                                          ||||||||||||||||||||||||||||||', '\n', '                                                                                                          +----------------------------+')
+    time.sleep(1)
+
 
 def awatingInput(query, options, first, second, third, fourth):
 
@@ -69,19 +90,29 @@ def textbox(sleep, nametag, line1, line2, line3):
     time.sleep(sleep)
     newScreen()
 
+#startup
+print( '                                                                                                                    Hinweis: Spiele im Vollbild für die beste Spielerfahrung.')
+time.sleep(3.5)
+newScreen()
+print('                                                                                                                    Stelle dir eine Startmusik vor.')
+time.sleep(1.5)
+
 #titlescreen, Art by Korrath
 newScreen()
-print("                                         -,,,__                                                 \n                                          \\    ``~~--,,__                /   /                   \n                                          /              ``~~--,,_     //--//                   \n                               _,,,,-----,\\              ,,,,---- >   (c  c)\\                   \n                           ,;''            `\\\\,,,,----''''   ,,-'''---/   /_ ;___        -,_     \n                          ( ''---,;====;,----/             (-,,_____/  /'/ `;   '''''----\\ `:.  \n                          (                 '               `      (oo)/   ;~~~~~~~~~~~~~/--~   \n                           `;_           ;    \\            ;   \\   `  ' ,,'                     \n                              ```-----...|     )___________|    )-----'''                       \n                                          /  /,              `\\   \\\\                            \n                                        ,'---\\ \\              ,---`,;,                          \n                                              ```                                               \n\n\n\n\n\n                                        -<[  Schere  -  Stein  -  Drache  ]>- \n\n\n\n\n\n")
-input('                                             Press \"ENTER\" to continue \n\n')
+print("                                                                                                      -,,,__                                                 \n                                                                                                       \\    ``~~--,,__                /   /                   \n                                                                                                       /              ``~~--,,_     //--//                   \n                                                                                            _,,,,-----,\\              ,,,,---- >   (c  c)\\                   \n                                                                                        ,;''            `\\\\,,,,----''''   ,,-'''---/   /_ ;___        -,_     \n                                                                                       ( ''---,;====;,----/             (-,,_____/  /'/ `;   '''''----\\ `:.  \n                                                                                       (                 '               `      (oo)/   ;~~~~~~~~~~~~~/--~   \n                                                                                        `;_           ;    \\            ;   \\   `  ' ,,'                     \n                                                                                           ```-----...|     )___________|    )-----'''                       \n                                                                                                       /  /,              `\\   \\\\                            \n                                                                                                     ,'---\\ \\              ,---`,;,                          \n                                                                                                           ```                                               \n\n\n\n\n\n                                                                                                     -<[  Schere  -  Stein  -  Drache  ]>- \n\n\n\n\n\n")
+time.sleep(3)
+newScreen()
+loading()
+input('                                                                                                             Press \"ENTER\" to continue \n\n')
 newScreen()
 
 #introduction
-time.sleep(4)
+time.sleep(3.5)
 textbox(4, 'Unbekannter', 'Hallo!', '','')
 textbox(3, 'Unbekannter', 'Ich bin Professor E.!', '', '')
 textbox(2.5, 'Professor E.', 'Ich werde dein Begleiter sein.', '', '')
-textbox(1.5, 'Professor E.', 'Ich werde dein Begleiter sein.', 'Aber leider bin ich sehr vergesslich.', '')
-textbox(2, 'Professor E.', 'Ich werde dein Begleiter sein.', 'Aber leider bin ich sehr vergesslich.', 'Wie heißt du nochmal?')
+textbox(1.5, 'Professor E.', 'Aber leider bin ich sehr vergesslich.', '', '')
+textbox(2.5, 'Professor E.', 'Aber leider bin ich sehr vergesslich.', 'Wie heißt du nochmal?', '')
 
 
 #playername
@@ -89,8 +120,8 @@ newScreen()
 print('             Gebe nun deinen Namen ein.')
 playername = input('\n\n\n\n\n\n\n\n\n             >> ')
 newScreen()
-time.sleep(1.5)
-awatingInput('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n Um fortzufahren, bestätige mit', 1, 'Verstanden', '', '', '')
+time.sleep(1)
+awatingInput('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n ''            Um fortzufahren, bestätige mit', 1, 'Verstanden', '', '', '')
 if choice == option1:
     newScreen()
     time.sleep(2)
