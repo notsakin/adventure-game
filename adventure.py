@@ -206,7 +206,7 @@ def dragonfight(force_match):
                 input()
 
             #FORCE DEFEAT
-            if force_match == 'd':
+            elif force_match == 'd':
                 print('Du: Schere     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
@@ -214,7 +214,7 @@ def dragonfight(force_match):
                 input()
 
             #FORCE REGULAR MATCH
-            if force_match == 'r':
+            elif force_match == 'r':
                 dragon_choice = randrange(3)
                 if dragon_choice == 1:
                     print('Du: Schere     Drache: ???\n\n\n\n\n')
@@ -222,13 +222,13 @@ def dragonfight(force_match):
                     new_screen()
                     print('Du: Schere     Drache: Schere\n\n>>  Unentschieden!  <<\nSchere macht nix gegen Schere!\n\n')
                     input()
-                if dragon_choice == 2:
+                elif dragon_choice == 2:
                     print('Du: Schere     Drache: ???\n\n\n\n\n')
                     time.sleep(2)
                     new_screen()
                     print('Du: Schere     Drache: Stein\n\n>>  Verloren!  <<\nStein zerstört Schere!\n\n')
                     input()
-                if dragon_choice == 3:
+                elif dragon_choice == 3:
                     print('Du: Schere     Drache: ???\n\n\n\n\n')
                     time.sleep(2)
                     new_screen()
@@ -236,7 +236,7 @@ def dragonfight(force_match):
                     input()
 
         #STEIN
-        if choice == 'Stein':
+        elif choice == 'Stein':
             new_screen()
             print('Der Drache wählt....')
             time.sleep(2)
@@ -251,7 +251,7 @@ def dragonfight(force_match):
                 input()
 
             #FORCE DEFEAT
-            if force_match == 'd':
+            elif force_match == 'd':
                 print('Du: Stein     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
@@ -259,7 +259,7 @@ def dragonfight(force_match):
                 input()
 
             #FORCE REGULAR MATCH
-            if force_match == 'r':
+            elif force_match == 'r':
                 dragon_choice = randrange(3)
                 if dragon_choice == 1:
                     print('Du: Stein     Drache: ???\n\n\n\n\n')
@@ -267,13 +267,13 @@ def dragonfight(force_match):
                     new_screen()
                     print('Du: Stein     Drache: Schere\n\n>>  Gewonnen!  <<\nStein zerschmettert Schere!\n\n')
                     input()
-                if dragon_choice == 2:
+                elif dragon_choice == 2:
                     print('Du: Stein     Drache: ???\n\n\n\n\n')
                     time.sleep(2)
                     new_screen()
                     print('Du: Stein     Drache: Stein\n\n>>  Unentschieden!  <<\nStein fällt auf Stein, passiert aber nichts...\n\n')
                     input()
-                if dragon_choice == 3:
+                elif dragon_choice == 3:
                     print('Du: Stein     Drache: ???\n\n\n\n\n')
                     time.sleep(2)
                     new_screen()
@@ -295,7 +295,7 @@ def dragonfight(force_match):
                 input()
 
             #FORCE DEFEAT
-            if force_match == 'd':
+            elif force_match == 'd':
                 print('Du: Drache     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
@@ -303,7 +303,7 @@ def dragonfight(force_match):
                 input()
 
             #FORCE REGULAR MATCH
-            if force_match == 'r':
+            elif force_match == 'r':
                 dragon_choice = randrange(3)
                 if dragon_choice == 1:
                     print('Du: Drache     Drache: ???\n\n\n\n\n')
@@ -311,20 +311,20 @@ def dragonfight(force_match):
                     new_screen()
                     print('Du: Drache     Drache: Schere\n\n>>  Verloren!  <<\nDie Schere besiegt deinen Drachen!\n\n')
                     input()
-                if dragon_choice == 2:
+                elif dragon_choice == 2:
                     print('Du: Drache     Drache: ???\n\n\n\n\n')
                     time.sleep(2)
                     new_screen()
                     print('Du: Drache     Drache: Stein\n\n>>  Gewonnen!  <<\nDein Drache isst den Stein, er hatte wohl Appetit!\n\n')
                     input()
-                if dragon_choice == 3:
+                elif dragon_choice == 3:
                     print('Du: Drache     Drache: ???\n\n\n\n\n')
                     time.sleep(2)
                     new_screen()
                     print('Du: Drache     Drache: Drache\n\n>>  Unentschieden!  <<\nDrache gegen Drache, da geht nix!\n\n')
                     input()
 
-    if choice == 'Nein':
+    elif choice == 'Nein':
         new_screen()
         input('Dann halt nicht! :P')
 
@@ -333,9 +333,13 @@ def event(text):
     time.sleep(3)
     new_screen()
 
+##main
+
+
+
 #startup
-print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Das Spiel ist für 24"-27" Bildschirme im 16:9 Format konzepiert. \n     Damit auch alles glatt läuft, aktiviere bitte den Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Die aktuelle Version (Pre-Alpha Oktober 2019 //  v.0.11.5) enthält noch sehr viele Bugs und Tippfehler, \n     bitte hab also Verständnis wenn etwas nicht funktioniert und du das Spiel schließen musst.\n\n\nDas Spiel startet in wenigen Sekunden.')
-time.sleep(2.5)
+print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Das Spiel ist für 24"-27" Bildschirme im 16:9 Format konzipiert. \n     Damit auch alles glatt läuft, aktiviere bitte den Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Die aktuelle Version (Pre-Alpha Halloween 2019 //  v.0.2.0) enthält noch sehr viele Bugs und Tippfehler, \n     bitte hab also Verständnis wenn etwas nicht funktioniert und du das Spiel schließen musst.\n\n\nDas Spiel startet in wenigen Sekunden.')
+time.sleep(6.5)
 new_screen()
 loadingbar()
 new_screen()
@@ -429,5 +433,5 @@ if choice == option2:
     input('.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
     input('..\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 textbox(3,'Professor E.','Der Drache scheint dich gar nicht','töten zu wollen!','')
-textbox(3,'Professor E.','Abeer er wird dir deinen Vater', 'auch nicht so einfach her','wiedergeben.')
+textbox(3,'Professor E.','Aber er wird dir deinen Vater', 'auch nicht so einfach her','wiedergeben.')
 input('ENDE')
