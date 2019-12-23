@@ -351,6 +351,7 @@ def event(sleep, text):
 
 #startup
 print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.0.9.2')
+
 time.sleep(15)
 new_screen()
 loadingbar()
@@ -480,7 +481,9 @@ textbox(2.5, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen D
 textbox(1, playername, 'Ich weiß alles über sie!', '','')
 textbox(2, 'Drache', 'Also?','','')
 textbox(3, 'Drache', 'Also?','Bist du bereit,','zu verlieren?')
+
 awating_input('Möchtest du gegen den Drachen spielen?', 2, 'Ja', 'Nein','','')
+
 if choice == option2:
     textbox(1.5, 'Drache', 'Pffff!','','')
     textbox(2.5, 'Drache', 'Pffff!', 'Was soll das denn', 'heißen?')
