@@ -1,7 +1,13 @@
 from random import randrange
 import time
 
-#deefinitons
+
+
+
+                  ##deefinitons
+
+
+
 def new_screen():
     print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 
@@ -133,13 +139,13 @@ def awating_input(query, options, first, second, third, fourth):
     if options == 1:
         new_screen()
         print('            ', query, '\n\n', '               <>', option1)
-    if options == 2:
+    elif options == 2:
         new_screen()
         print('            ', query, '\n\n', '               <>', option1, '\n', '               <>', option2)
-    if options == 3:
+    elif options == 3:
         new_screen()
         print('            ', query, '\n\n', '               <>', option1, '\n', '               <>', option2, '\n','               <>', option3)
-    if options == 4:
+    elif options == 4:
         new_screen()
         print('            ', query, '\n\n', '               <>', option1, '\n', '               <>', option2, '\n','               <>', option3, '\n','               <>', option4)
     global choice
@@ -324,22 +330,28 @@ def dragonfight(force_match):
                     print('Du: Drache     Drache: Drache\n\n>>  Unentschieden!  <<\nDrache gegen Drache, da geht nix!\n\n')
                     input()
 
-    elif choice == 'Nein':
+    elif choice == option2:
         new_screen()
         input('Dann halt nicht! :P')
 
-def event(text):
+def event(sleep, text):
+    new_screen()
     print('                                                                                             ',text)
-    time.sleep(3)
+    time.sleep(sleep)
     new_screen()
 
-##main
+
+
+
+     ## story
+
+
 
 
 
 #startup
-print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Das Spiel ist für 24"-27" Bildschirme im 16:9 Format konzipiert. \n     Damit auch alles glatt läuft, aktiviere bitte den Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Die aktuelle Version (Pre-Alpha Halloween 2019 //  v.0.2.0) enthält noch sehr viele Bugs und Tippfehler, \n     bitte hab also Verständnis wenn etwas nicht funktioniert und du das Spiel schließen musst.\n\n\nDas Spiel startet in wenigen Sekunden.')
-time.sleep(6.5)
+print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.1.2.0')
+time.sleep(15)
 new_screen()
 loadingbar()
 new_screen()
@@ -374,18 +386,20 @@ if choice == option1:
     print('            ', playername,'wird nun dein Name sein.\n\n\n\n\n\n\n\n')
     time.sleep(2.5)
     new_screen()
-    #Satzzeichen-Variablen für textbox()
-    playername_pkt = playername + str('.')
-    playername_kma = playername + str(',')
-    playername_frg = playername + str('?')
-    playername_aus = playername + str('!')
+
+#Satzzeichen-Variablen für textbox()
+playername_pkt = playername + str('.')
+playername_kma = playername + str(',')
+playername_frg = playername + str('?')
+playername_aus = playername + str('!')
 
 if choice != option1:
     new_screen()
-    input('                     /!\ \n\nOh, damit haben wir wohl nicht gerechnet.\nAber immerhin hast du dieses nette Easter Egg gefunden.\nWenn du weiterspielen willst, musst du das Programm schließen,\n ansonsten könnten ungewollte Bugs entstehen.')
+    input('                     /!\ \n\nOh, damit haben wir wohl nicht gerechnet.\nAber immerhin hast du dieses nette Easter Egg gefunden.\n\nWenn du weiterspielen willst, musst du das Programm schließen,\n ansonsten könnten ungewollte Bugs entstehen.')
     new_screen()
 
-print('Story beginnt. Hinweis: Dies ist ein Pre-Alpha Build, erwarte also nicht zuviel :^)')
+
+print('Story beginnt. Hinweis: Dies ist ein nicht komplett vollständiger Build, erwarte also nicht zuviel :^)')
 time.sleep(2)
 new_screen()
 
@@ -407,31 +421,140 @@ if choice == option1:
     time.sleep(1)
     new_screen()
     textbox(2,'Professor E.','Ok!','Auf zur Drachenhöhle!','')
-    event('Nach 2 Stunden kommst du zusammen mit dem Professor endlich an.')
+    event(4.5,'Nach 2 Stunden kommst du zusammen mit dem Professor endlich an.')
 if choice == option2:
     time.sleep(1)
     new_screen()
-    event('/!\\ Hier wurde wohl noch nicht weitergeschieben... Fang doch nochmal von vorne an.')
-    input('Bitte schließe das Programm.')
-    input('.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
-    input('..\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+    event(4,'/!\\ Hier wurde wohl noch nicht weitergeschieben... Fang doch nochmal von vorne an.')
+    input('Bitte drücke \'Enter\'')
+    exit()
+
 textbox(3,playername,'Oh...','Das ist wohl die Drachenhöhle, von','der mein Vater immer erzählte...')
-new_screen()
-event('*Drachenbrüllen*')
-new_screen()
 textbox(1,'Professor E.','Los!','','')
 textbox(2,'Professor E.','Los!','Geh rein bevor es zu spät ist!','')
 awating_input('Bist du sicher dass du in die gefährliche Drachenhöhle gehen willst?',2,'Ja...?','Nein!?','','')
 if choice == option1:
     new_screen()
-    event('Du betrittst nun die Höhle, der Professor dicht hinter dir.')
+    event(3,'Du betrittst nun die Höhle, der Professor dicht hinter dir.')
 if choice == option2:
     time.sleep(1)
     new_screen()
-    event('/!\\ Hier wurde wohl noch nicht weitergeschieben... Fang doch nochmal von vorne an.')
+    event(4, '/!\\ Hier wurde wohl noch nicht weitergeschieben... Fang doch nochmal von vorne an.')
     input('Bitte schließe das Programm.')
-    input('.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
-    input('..\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+    exit()
+
 textbox(3,'Professor E.','Der Drache scheint dich gar nicht','töten zu wollen!','')
 textbox(3,'Professor E.','Aber er wird dir deinen Vater', 'auch nicht so einfach her','wiedergeben.')
-input('ENDE')
+textbox(1,'Professor E.', 'Los!', '', '')
+textbox(2,'Professor E.', 'Los!', 'Geh mal hin!', '')
+event(3, '*Drachenbrüllen*')
+textbox(2.5, 'Drache', 'Hey!', '','')
+textbox(2, 'Drache', 'Hey!', 'Du da vorne!','')
+textbox(3, 'Drache', 'Hey!', 'Du da vorne!','Komm her!')
+textbox(4, 'Drache', 'Du bist doch sicher wegen', 'deinem Vater hier,','oder?')
+textbox(1.5, 'Drache', 'Nun,', '','')
+textbox(2, 'Drache', 'Nun, ich kann ihn dir', 'nicht zurück geben.','')
+time.sleep(1.75)
+textbox(2.5, 'Drache', 'ES SEI DENN!', '','')
+textbox(3, 'Drache', 'Du besiegst mich 3 Mal', 'hintereinander in...','')
+textbox(1.5, 'Drache', 'SCHERE!', '','')
+textbox(1.5, 'Drache', 'STEIN!', '','')
+textbox(1.5, 'Drache', 'DRACHE!', '','')
+
+textbox(0.2, 'Drache', 'MUHA', '','')
+textbox(0.2, 'Drache', 'MUHAHAHA', '','')
+textbox(0.2, 'Drache', 'MUHAHAHAHAHA', '','')
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHA', '','')
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHAHA', '','')   #cool text animation
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHAHA', 'HA','')
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHA','')
+textbox(0.175, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHAHAA','')
+textbox(0.25, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHAHAAAA','')
+textbox(2.5, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHAHAAAAAA!!','')
+textbox(1.5, 'Professor E.', 'Schere, Stein, Drache...', '','')
+textbox(2.5, 'Professor E.', 'Schere, Stein, Drache...', 'Was soll das sein!?','')
+textbox(4, 'Professor E.', 'playername_kma', 'weißt du was das hier','überhaupt für eine Höhle ist?')
+textbox(0.5, playername, 'Mein Vater hat mir sehr oft','','')
+textbox(1, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Drachen-','')
+textbox(2.5, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Drachen-','höhle erzählt.')
+textbox(1, playername, 'Ich weiß alles über sie!', '','')
+textbox(2, 'Drache', 'Also?','','')
+textbox(3, 'Drache', 'Also?','Bist du bereit,','zu verlieren?')
+awating_input('Möchtest du gegen den Drachen spielen?', 2, 'Ja', 'Nein')
+if choice == option2:
+    textbox(1.5, 'Drache', 'Pffff!','','')
+    textbox(2.5, 'Drache', 'Pffff!', 'Was soll das denn', 'heißen?')
+    textbox(3, 'Drache', 'Du bleibst gefälligst hier', 'und kämpfst!','')
+if choice == option1:
+    textbox(1.5, 'Drache', 'Ok gut!', '', '')
+    textbox(2.5, 'Drache', 'Ok gut!', 'Dann lass mir kurz die Regeln', 'erklären.')
+
+textbox(2.5, 'Drache', 'Du musst 3 mal', 'nacheinander gewinnen,', '')
+textbox(2.5, 'Drache', 'aber wenn ich auch nur', '1 einziges Mal gewinne,')
+textbox(2.5, 'Drache', 'hast du verloren!', '', '')
+textbox(1.5, 'Drache', 'Drache frisst Stein,','','')
+textbox(1.5, 'Drache', 'Schere sticht Drache ab,','','')
+textbox(1.5, 'Drache', 'und Stein macht Schere','kaputt,','')
+textbox(2, 'Drache', 'das kennst du ja', 'hoffentlich.','')
+event(3, 'Du trittst 2 Schritte vor')
+textbox(2.5, 'Drache', 'Dann lasst uns kämpfen!', '', '')
+
+dragonfight('v')
+textbox(1.5, 'Drache', 'Du scheinst dich ja', 'ganz gut zu schlagen.', '')
+textbox(2, 'Drache', 'Du scheinst dich ja', 'ganz gut zu schlagen.', 'Nächste Runde!')
+dragonfight('v')
+textbox(3, 'Drache', 'Grrrrr.....', '', '')
+textbox(1.5, 'Drache', 'Grrrrr.....', 'Letzte Runde!', '')
+dragonfight('d')
+textbox(2, 'Drache', 'Tja...', '', '')
+textbox(3, 'Drache', 'Tja...', 'Ich wusste, dass ich', 'gewinnen werde!')
+
+textbox(0.2, 'Drache', 'MUHA', '','')
+textbox(0.2, 'Drache', 'MUHAHAHA', '','')
+textbox(0.2, 'Drache', 'MUHAHAHAHAHA', '','')
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHA', '','')
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHAHA', '','')   #cool text animation
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHAHA', 'HA','')
+textbox(0.15, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHA','')
+textbox(0.175, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHAHAA','')
+textbox(0.25, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHAHAAAA','')
+textbox(2.5, 'Drache', 'MUHAHAHAHAHAHAHA', 'HAHAHAAAAAA!!','')
+
+textbox(2, 'Drache', 'Aber ich will mal nicht', 'so sein.','')
+textbox(1.5, 'Drache', 'Du hast 3 Tage Zeit.', '','')
+textbox(1.5, 'Drache', 'Du hast 3 Tage Zeit.', 'Trainiere und komm wieder, ','')
+textbox(1.5, 'Drache', 'Du hast 3 Tage Zeit.', 'Trainiere und komm wieder, ','')
+textbox(4, 'Drache', 'wenn du nach 3 Tagen nicht', 'wieder hier bist und gegen', 'mich kämpfst...')
+textbox(2, 'Drache', 'fresse ich deinen Vater…', '', '')
+textbox(2.5, 'Drache', 'UND JETZT AB!', '', '')
+
+textbox(1.5, 'Professor E.', 'Schnell, lass uns gehen!', '', '')
+textbox(1.5, 'Professor E.', 'Schnell, lass uns gehen!', 'Wir haben nicht','viel Zeit!')
+
+event(3, 'Du rennst mit dem Professor aus der Höhle.')
+
+textbox(3, 'Professor E.', 'Ich kenne da ein paar', 'Leute, die uns vielleicht', 'helfen könnten.')
+textbox(2, 'Professor E.', 'Ich selbst kann das', 'selbstverständlich', 'nicht tun.')
+
+textbox(1.5, 'Professor E.', 'Walli...', '', '')
+textbox(1.5, 'Professor E.', 'Walli...', 'Er sieht aus wie eine', 'echte Wallnuss.')
+textbox(3.5, 'Professor E.', 'Er hat stolze 3 Mal die', 'Schere, Stein, Papier WM', 'gewonnen.')
+textbox(2.5, 'Professor E.', 'Beeindruckend,', 'nicht war?', '')
+awating_input('Wie stehst du dazu?', 4, 'Wow, das muss ein wahrer Profi sein!','Das kann doch jeder.','Aber... Schere, Stein, Drache ist doch so viel anders als Schere, Stein, Papier?','Haha, ne Wallnuss als Trainer!')
+if choice == option1:
+    textbox(2, 'Professor E.', 'Ja, das stimmt durchaus,', 'aber...', '')
+    textbox(1, 'Professor E.', 'Schere, Stein, Papier', 'unterscheidet sich sehr', '')
+    textbox(2, 'Professor E.', 'unterscheidet sich sehr', 'von Schere, Stein, Drache.', '')
+if choice == option2:
+    textbox(3.5, 'Professor E.', 'Na, sei mal nicht so.', 'Immerhin hast du ja', 'gar nicht mitgemacht, oder?')
+if choice == option3:
+    textbox(1.5, 'Professor E.', 'Da hast du Recht.', '', '')
+
+if choíce == option4:
+    textbox(3.5, 'Professor E.', 'Ja, schon komisch. Aber','du solltest dich nicht', 'über ihn lustig machen.')
+
+textbox(3, 'Professor E.', 'Ein Besuch bei ihm wäre', 'vielleicht trotzdem', 'ganz nützlich.')
+
+
+event(9, 'Ende der Story des Holiday Updates 2019. \n Falls du dir bereits die weitergeschiebene Story ansehen willst, \n besuche die Story-Script Seite in unserem GitHub Wiki.')
+event(15, 'Danke fürs spielen.')
