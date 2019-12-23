@@ -1,41 +1,41 @@
 Story:  Unbekannter:
-	Hallo! 
-	
+	Hallo!
+
 	Unbekannter:
 	Ich bin Professor E.
 
 	Professor E.:
 	Ich bin dein Begleiter!
 	Aber leider bin ich sehr vergesslich…
-	
+
 	Professor E.:
-	Wie heißt du nochmal? 
+	Wie heißt du nochmal?
 
 	Namen eingeben
 
 	Professor E.:
-	Ahhhhh stimmt, Name. 
+	Ahhhhh stimmt, Name.
 	Ach ich bin schon so alt und vergesslich.
 
 	Professor E.:
 	Also…
 	Etwas schlimmes ist passiert…
 	Es tut mir sehr leid für dich :(…
-	
+
 	Professor E.:
 	Dein…
 	Vater…
 	Wurde…
 	Von dem großem blauen Drachen entführt…
 
-	Professor.: 
+	Professor.:
 	Er ist in der Drachen Höhle am Ende der Stadt…
 	Keiner kann ihn retten…
 
-	Professor.: 
+	Professor.:
 	Außer…
 
-	Professor: 
+	Professor:
 	Du!
 	Du, Name, du kannst ihn retten!
 
@@ -57,7 +57,7 @@ Professor E.:
 	Du gehst zur Drachenhöhle,
 	Nach 2 Stunden kommst du endlich an.
 
-Name: 
+Name:
 	Oh…
 	Das ist wohl die Drachenhöhle, von der mein Vater immer erzählt hat…
 	ein bisschen Angst habe ich schon…
@@ -113,7 +113,7 @@ Professor E.:
 Der Drache sieht dich
 *Drachenbrüllen*
 
-Drache: 
+Drache:
 	Hey!
 	Du da vorne!
 	Komm her!
@@ -135,7 +135,7 @@ X:
 	Ich weiß alles über sie!
 
 Drache:
-	Also? 
+	Also?
 	Bist du bereit zu verlieren!?
 
 Möchtest du gegen den Drachen spielen?
@@ -167,7 +167,7 @@ Spieler wählt 2 mal irgendwas und gewinnt 2 mal. Beim letzten mal verliert er g
 
 Drache:
 	Tja, ich wusste, dass ich gewinnen werde.
-	
+
 Drache:
 	Aber ich will mal nicht so sein…
 	Du hast 3 Tage zeit.
@@ -178,41 +178,46 @@ Drache:
 Drache:
 	UND JETZT AB!
 
-Professer E.: 
+Professer E.:
 	Schnell, lass uns los gehen, wir haben nicht viel Zeit!
 
 Professor E.:
 	Ich kenn da ein paar Leute die uns vielleicht weiter helfen können…
 
-Professor E.: 
+Professor E.:
 	Walli…
 	Er sieht aus wie eine Wallnuss…
 	3 mal Hintereinander in der Schere Stein Papier Weltmeisterschaft gewonnen...
 
-Professor E.: 
+Professor E.:
 	Aber Schere Stein Papier ist was anderes als Schere Stein Drache, also ich weiß nicht ob er uns helfen kann.
+
+
+##### Ab hier wurde die Story im Spiel noch nicht weitererzählt. #####
+
+
 
 Professor E.:
 	Der zweite heißt Mallo…
 	Ich kenne ihn nicht so gut und denke nicht er wird uns helfen ohne was von uns zu erwarten, aber ich habe gehört, dass er sich früher oft ´mit dem Drachen zum Schere Stein Drache spielen getroffen hat.
 
-Professor E.: 
+Professor E.:
 	Und der letze…
 Professor E.:
 	Keiner weiß, ob er wirklich existiert...
-	
+
 Professor E.:
 	Sein Name ist D.
-	
+
 Professor E.:
 	D…
-	
+
 Professor E.:
 	Mehr kann ich zu seinem Namen nicht sagen…
 	Man sagt er hat eine besondere Bindung zum Drachen...
 	laut einer Legende kann man zu ihm kommen wenn man einen seltenen Draben-Käfer in den Fluss am Magischem Baum wirft…
 
-Professor E.: 
+Professor E.:
 	Ich kenne eine Person, die vielleicht ein bisschen mehr über ihn weiß…
 	Der Weg dahin wäre aber sehr weit und ich weiß nicht ob es sich lohnt...
 
@@ -221,7 +226,7 @@ Professor E.:
 
 (Walli/Mallo/D)
 
-Wenn D: 
+Wenn D:
 
 Professor E.:
 	Bist du dir sicher?
@@ -229,17 +234,17 @@ Professor E.:
 	Lass uns erst mal woanders hingehen.
 
 Wenn Mallo.:
-	
+
 Professor E.:
 	Ok!
 	Auf zu Mallo!
 
-Professor E.: 
-	Es gibt 2 Wege, den Berg Pfad, ungefährlich, aber ein langer Weg zu ihm oder den 
+Professor E.:
+	Es gibt 2 Wege, den Berg Pfad, ungefährlich, aber ein langer Weg zu ihm oder den
 	Gift Weg, direkt durch den Gift Sumpf…
 	Schneller, aber voll mit giftigen Schlagen und Krokodilen.
 
-Professor E.: 
+Professor E.:
 	Welchen Weg möchtest du gehen?
 
 (bergpfad/Gift Weg)
@@ -258,7 +263,7 @@ Du: antwort
 
 Wenn 1.:
 
-Mallo: 
+Mallo:
 	Hallo!
 	Tut mir leid aber ich habe gerade nicht viel Zeit.
 	Du kannst mich morgen besuchen kommen. Ich wohne am Wald weg 12.
