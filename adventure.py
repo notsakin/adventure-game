@@ -350,7 +350,7 @@ def event(sleep, text):
 
 
 #startup
-print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.1.2.0')
+print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.0.9.2')
 time.sleep(15)
 new_screen()
 loadingbar()
