@@ -124,7 +124,7 @@ def loadingbar():
     time.sleep(randrange(4.0))
     new_screen()
 
-def awating_input(query, options, first, second, third, fourth):
+def awaiting_input(query, options, first, second, third, fourth):
 
     global  option1
     global  option2
@@ -193,7 +193,7 @@ def dragonfight(force_match):
     print('                                                                             >>>   Mach dich bereit, es geht los!   <<<\n\n\n\n\n\n\n\n\n')
     time.sleep(3)
     new_screen()
-    awating_input('Wähle!', 3, 'Schere','Stein','Drache','')
+    awaiting_input('Wähle!', 3, 'Schere','Stein','Drache','')
 
     #SCHERE
     if choice == 'Schere':
@@ -345,7 +345,7 @@ def event(sleep, text):
 
 
 #startup
-print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.0.9.33')
+print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.0.9.34')
 time.sleep(15)
 new_screen()
 loadingbar()
@@ -374,7 +374,7 @@ print('             Gebe nun deinen Namen ein.')
 playername = input('\n\n\n\n\n\n\n\n\n             >> ')
 new_screen()
 time.sleep(1)
-awating_input('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n             Um fortzufahren, tippe das folgendes korrekt ab: \n\n             PS: So sieht es aus, wenn du Entscheidungen triffst. \n             Achte darauf, dass du dich nicht verschreibst!', 1, 'Verstanden', '', '', '')
+awaiting_input('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n             Um fortzufahren, tippe das folgendes korrekt ab: \n\n             PS: So sieht es aus, wenn du Entscheidungen triffst. \n             Achte darauf, dass du dich nicht verschreibst!', 1, 'Verstanden', '', '', '')
 if choice == option1:
     new_screen()
     time.sleep(2)
@@ -412,7 +412,7 @@ textbox(3,'Professor E.','Er ist in der Drachenhöhle','am Ende der Stadt.','Kei
 textbox(2,'Professor E.','Außer...','','')
 textbox(2,'Professor E.','Außer...','','Du!')
 textbox(3, 'Professor E.', 'Du,', playername_kma, 'du kannst ihn retten!')
-awating_input('Bist du bereit deinen Vater zu retten?', 2, 'Ja!','Nein!','','')
+awaiting_input('Bist du bereit deinen Vater zu retten?', 2, 'Ja!','Nein!','','')
 if choice == option1:
     time.sleep(1)
     new_screen()
@@ -429,7 +429,7 @@ if choice == option2:
 textbox(3,playername,'Oh...','Das ist wohl die Drachenhöhle, von','der mein Vater immer erzählte...')
 textbox(1,'Professor E.','Los!','','')
 textbox(2,'Professor E.','Los!','Geh rein bevor es zu spät ist!','')
-awating_input('Bist du sicher dass du in die gefährliche Drachenhöhle gehen willst?',2,'Ja...?','Nein!?','','')
+awaiting_input('Bist du sicher dass du in die gefährliche Drachenhöhle gehen willst?',2,'Ja...?','Nein!?','','')
 if choice == option1:
     new_screen()
     event(3,'Du betrittst nun die Höhle, der Professor dicht hinter dir.')
@@ -477,7 +477,7 @@ textbox(3, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Dra
 textbox(1.5, playername, 'Ich weiß alles über sie!', '','')
 textbox(2, 'Drache', 'Also?','','')
 textbox(3, 'Drache', 'Also?','Bist du bereit,','zu verlieren?')
-awating_input('Möchtest du gegen den Drachen spielen?', 2, 'Ja', 'Nein', '', '')
+awaiting_input('Möchtest du gegen den Drachen spielen?', 2, 'Ja', 'Nein', '', '')
 if choice == option2:
     textbox(1.5, 'Drache', 'Pffff!','','')
     textbox(2.5, 'Drache', 'Pffff!', 'Was soll das denn', 'heißen?')
@@ -534,32 +534,41 @@ textbox(1.5, 'Professor E.', 'Schnell, lass uns gehen!', 'Wir haben nicht','viel
 event(3, 'Du rennst mit dem Professor aus der Höhle.')
 
 textbox(3, 'Professor E.', 'Ich kenne da ein paar', 'Leute, die uns vielleicht', 'helfen könnten.')
-textbox(2, 'Professor E.', 'Ich selbst kann das', 'selbstverständlich', 'nicht tun.')
+textbox(3, 'Professor E.', 'ICH selbst kann das', 'selbstverständlich', 'nicht tun.')
+textbox(2.5, 'Professor E.', 'Also, die Kandidaten wären:', '', '')
 
 textbox(1.5, 'Professor E.', 'Walli...', '', '')
 textbox(1.5, 'Professor E.', 'Walli...', 'Er sieht aus wie eine', 'echte Wallnuss.')
 textbox(3.5, 'Professor E.', 'Er hat stolze 3 Mal die', 'Schere, Stein, Papier WM', 'gewonnen.')
 textbox(2.5, 'Professor E.', 'Beeindruckend,', 'nicht war?', '')
-awating_input('Was sagst du dazu? \n\n(Du kannst auch 1, 2, 3 oder 4 antworten, für die jeweilige Entscheidung.)', 4, 'Wow, das muss ein wahrer Profi sein!','Das kann doch jeder.','Aber... Schere, Stein, Drache ist doch so viel anders als Schere, Stein, Papier?','Haha, ne Wallnuss als Trainer!')
-if choice == option1 or '1':
+awaiting_input('Was sagst du dazu? \n\n                (Bei dieser Entscheidung antworte mit 1, 2, 3 oder 4)', 4, 'Wow, das muss ein wahrer Profi sein!','Das kann doch jeder.','Aber... Schere, Stein, Drache ist doch so viel anders als Schere, Stein, Papier?','Haha, ne Wallnuss als Trainer!')
+if choice == '1':
     textbox(2, 'Professor E.', 'Ja, das stimmt durchaus,', 'aber...', '')
     textbox(1, 'Professor E.', 'Schere, Stein, Papier', 'unterscheidet sich sehr', '')
     textbox(2, 'Professor E.', 'unterscheidet sich sehr', 'von Schere, Stein, Drache.', '')
-if choice == option2 or '2':
+
+if choice == '2':
     textbox(3.5, 'Professor E.', 'Na, sei mal nicht so.', 'Immerhin hast du ja', 'gar nicht mitgemacht, oder?')
-if choice == option3 or '3':
+
+if choice == '3':
     textbox(1.5, 'Professor E.', 'Da hast du Recht.', '', '')
 
-if choice == option4 or '4':
+if choice == '4':
     textbox(3.5, 'Professor E.', 'Ja, schon komisch. Aber','du solltest dich nicht', 'über ihn lustig machen.')
 
+time.sleep(1)
 textbox(3, 'Professor E.', 'Ein Besuch bei ihm wäre', 'vielleicht trotzdem', 'ganz nützlich.')
 
 
-event(9, 'Ende der Story des Holiday Updates 2019, Patch 3. \n Falls du dir bereits die weitergeschiebene Story ansehen willst, \n besuche die Story-Script Seite in unserem GitHub Wiki.')
-event(4, 'Writer, Storyboard \n\n Joel')
-event(4, 'Story implementation, Programming Assistance \n\n Marcel')
-event(4, 'Story implementation, Programming \n\n Niklas ')
+print('Ende der Story des Holiday Updates 2019, Patch 3, Hotfix 4. \n Falls du dir bereits die weitergeschiebene Story ansehen willst, \n besuche die Story-Script Seite in unserem GitHub Wiki.')
+time.sleep(6)
+new_screen()
+print('Writer, Storyboard \n\n Joel')
+time.sleep(4)
+print('\n\n\n\n\n\nStory implementation, Programming Assistance \n\n Marcel')
+time.sleep(4)
+print('\n\n\n\n\n\nStory implementation, Programming \n\n Niklas ')
 time.sleep(3)
+new_screen()
 print('Danke fürs spielen.')
 input()
