@@ -557,9 +557,9 @@ textbox(3, 'Professor E.', 'Ein Besuch bei ihm wäre', 'vielleicht trotzdem', 'g
 
 
 event(9, 'Ende der Story des Holiday Updates 2019, Patch 3. \n Falls du dir bereits die weitergeschiebene Story ansehen willst, \n besuche die Story-Script Seite in unserem GitHub Wiki.')
-event(4, 'Writer & Storyboard \n\n Joel')
-event(4, 'Story implementation & Additional Backend Development \n\n Marcel')
-event(4, 'Backend Development & GitHub things\n\n Niklas ')
+event(4, 'Writer, Storyboard \n\n Joel')
+event(4, 'Story implementation, Programming Assistance \n\n Marcel')
+event(4, 'Story implementation, Programming \n\n Niklas ')
 time.sleep(3)
 print('Danke fürs spielen.')
 input()
