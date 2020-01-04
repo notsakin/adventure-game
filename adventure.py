@@ -148,6 +148,7 @@ def awating_input(query, options, first, second, third, fourth):
     elif options == 4:
         new_screen()
         print('            ', query, '\n\n', '               <>', option1, '\n', '               <>', option2, '\n','               <>', option3, '\n','               <>', option4)
+
     global choice
     choice = input('\n\n\n\n\n\n\n\n\n             >> ')
 
@@ -187,152 +188,146 @@ def textbox(sleep, nametag, line1, line2, line3):
 
 #dragonfight
 def dragonfight(force_match):
-    awating_input('Willst du gegen den Drachen kämpfen?', 2, 'Ja', 'Nein', '', '')
-    if choice == option1:
-        new_screen()
-        time.sleep(2)
-        print('                                                                             >>>   Bossfight!   <<<\n\n\n\n\n\n\n\n\n')
-        time.sleep(3)
-        new_screen()
-        awating_input('Wähle!', 3, 'Schere','Stein','Drache','')
+    new_screen()
+    time.sleep(2)
+    print('                                                                             >>>   Mach dich bereit, es geht los!   <<<\n\n\n\n\n\n\n\n\n')
+    time.sleep(3)
+    new_screen()
+    awating_input('Wähle!', 3, 'Schere','Stein','Drache','')
 
-        #SCHERE
-        if choice == 'Schere':
-            new_screen()
-            print('Der Drache wählt....')
+    #SCHERE
+    if choice == 'Schere':
+        new_screen()
+        print('Der Drache wählt....')
+        time.sleep(2)
+        new_screen()
+
+        #FORCE VICTORY
+        if force_match == 'v':
+            print('Du: Schere     Drache: ???\n\n\n\n\n')
             time.sleep(2)
             new_screen()
+            print('Du: Schere     Drache: Drache\n\n>>  Gewonnen!  <<\nSchere sticht Drache ab!\n\n')
+            time.sleep(3)
 
-            #FORCE VICTORY
-            if force_match == 'v':
+        #FORCE DEFEAT
+        elif force_match == 'd':
+            print('Du: Schere     Drache: ???\n\n\n\n\n')
+            time.sleep(2)
+            new_screen()
+            print('Du: Schere     Drache: Stein\n\n>>  Verloren!  <<\nStein zerstört Schere!\n\n')
+            time.sleep(3)
+
+        #FORCE REGULAR MATCH
+        elif force_match == 'r':
+            dragon_choice = randrange(3)
+            if dragon_choice == 1:
                 print('Du: Schere     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
-                print('Du: Schere     Drache: Drache\n\n>>  Gewonnen!  <<\nSchere sticht Drache ab!\n\n')
-                input()
-
-            #FORCE DEFEAT
-            elif force_match == 'd':
+                print('Du: Schere     Drache: Schere\n\n>>  Unentschieden!  <<\nSchere macht nix gegen Schere!\n\n')
+                time.sleep(3)
+            elif dragon_choice == 2:
                 print('Du: Schere     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
                 print('Du: Schere     Drache: Stein\n\n>>  Verloren!  <<\nStein zerstört Schere!\n\n')
-                input()
+                time.sleep(3)
+            elif dragon_choice == 3:
+                print('Du: Schere     Drache: ???\n\n\n\n\n')
+                time.sleep(2)
+                new_screen()
+                print('Du: Schere     Drache: Drache\n\n>>  Gewonnen!  <<\nSchere sticht Drache ab!\n\n')
+                time.sleep(3)
 
-            #FORCE REGULAR MATCH
-            elif force_match == 'r':
-                dragon_choice = randrange(3)
-                if dragon_choice == 1:
-                    print('Du: Schere     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Schere     Drache: Schere\n\n>>  Unentschieden!  <<\nSchere macht nix gegen Schere!\n\n')
-                    input()
-                elif dragon_choice == 2:
-                    print('Du: Schere     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Schere     Drache: Stein\n\n>>  Verloren!  <<\nStein zerstört Schere!\n\n')
-                    input()
-                elif dragon_choice == 3:
-                    print('Du: Schere     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Schere     Drache: Drache\n\n>>  Gewonnen!  <<\nSchere sticht Drache ab!\n\n')
-                    input()
+    #STEIN
+    elif choice == 'Stein':
+        new_screen()
+        print('Der Drache wählt....')
+        time.sleep(2)
+        new_screen()
 
-        #STEIN
-        elif choice == 'Stein':
-            new_screen()
-            print('Der Drache wählt....')
+        #FORCE VICTORY
+        if force_match == 'v':
+            print('Du: Stein     Drache: ???\n\n\n\n\n')
             time.sleep(2)
             new_screen()
+            print('Du: Stein     Drache: Schere\n\n>>  Gewonnen!  <<\nStein zerschmettert Schere!\n\n')
+            time.sleep(3)
 
-            #FORCE VICTORY
-            if force_match == 'v':
+        #FORCE DEFEAT
+        elif force_match == 'd':
+            print('Du: Stein     Drache: ???\n\n\n\n\n')
+            time.sleep(2)
+            new_screen()
+            print('Du: Stein     Drache: Drache\n\n>>  Verloren!  <<\nDrache schluckt Stein, einfach so!\n\n')
+            time.sleep(3)
+
+        #FORCE REGULAR MATCH
+        elif force_match == 'r':
+            dragon_choice = randrange(3)
+            if dragon_choice == 1:
                 print('Du: Stein     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
                 print('Du: Stein     Drache: Schere\n\n>>  Gewonnen!  <<\nStein zerschmettert Schere!\n\n')
-                input()
-
-            #FORCE DEFEAT
-            elif force_match == 'd':
+                time.sleep(3)
+            elif dragon_choice == 2:
+                print('Du: Stein     Drache: ???\n\n\n\n\n')
+                time.sleep(2)
+                new_screen()
+                print('Du: Stein     Drache: Stein\n\n>>  Unentschieden!  <<\nStein fällt auf Stein, passiert aber nichts...\n\n')
+                time.sleep(3)
+            elif dragon_choice == 3:
                 print('Du: Stein     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
                 print('Du: Stein     Drache: Drache\n\n>>  Verloren!  <<\nDrache schluckt Stein, einfach so!\n\n')
-                input()
+                time.sleep(3)
 
-            #FORCE REGULAR MATCH
-            elif force_match == 'r':
-                dragon_choice = randrange(3)
-                if dragon_choice == 1:
-                    print('Du: Stein     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Stein     Drache: Schere\n\n>>  Gewonnen!  <<\nStein zerschmettert Schere!\n\n')
-                    input()
-                elif dragon_choice == 2:
-                    print('Du: Stein     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Stein     Drache: Stein\n\n>>  Unentschieden!  <<\nStein fällt auf Stein, passiert aber nichts...\n\n')
-                    input()
-                elif dragon_choice == 3:
-                    print('Du: Stein     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Stein     Drache: Drache\n\n>>  Verloren!  <<\nDrache schluckt Stein, einfach so!\n\n')
-                    input()
-
-        #DRACHE
-        if choice == 'Drache':
-            new_screen()
-            print('Der Drache wählt....')
+    #DRACHE
+    if choice == 'Drache':
+        new_screen()
+        print('Der Drache wählt....')
+        time.sleep(2)
+        time.sleep(3)
+        #FORCE VICTORY / DRAW
+        if force_match == 'v':
+            print('Du: Drache     Drache: ???\n\n\n\n\n')
             time.sleep(2)
             new_screen()
-            #FORCE VICTORY / DRAW
-            if force_match == 'v':
-                print('Du: Drache     Drache: ???\n\n\n\n\n')
-                time.sleep(2)
-                new_screen()
-                print('Du: Drache     Drache: Stein\n\n>>  Gewonnen!  <<\nDein Drache isst den Stein, er hatte wohl Appetit!\n\n')
-                input()
+            print('Du: Drache     Drache: Stein\n\n>>  Gewonnen!  <<\nDein Drache isst den Stein, er hatte wohl Appetit!\n\n')
+            time.sleep(3)
 
-            #FORCE DEFEAT
-            elif force_match == 'd':
+        #FORCE DEFEAT
+        elif force_match == 'd':
+            print('Du: Drache     Drache: ???\n\n\n\n\n')
+            time.sleep(2)
+            new_screen()
+            print('Du: Drache     Drache: Schere\n\n>>  Verloren!  <<\nDie Schere besiegt deinen Drachen!\n\n')
+            time.sleep(3)
+
+        #FORCE REGULAR MATCH
+        elif force_match == 'r':
+            dragon_choice = randrange(3)
+            if dragon_choice == 1:
                 print('Du: Drache     Drache: ???\n\n\n\n\n')
                 time.sleep(2)
                 new_screen()
                 print('Du: Drache     Drache: Schere\n\n>>  Verloren!  <<\nDie Schere besiegt deinen Drachen!\n\n')
-                input()
-
-            #FORCE REGULAR MATCH
-            elif force_match == 'r':
-                dragon_choice = randrange(3)
-                if dragon_choice == 1:
-                    print('Du: Drache     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Drache     Drache: Schere\n\n>>  Verloren!  <<\nDie Schere besiegt deinen Drachen!\n\n')
-                    input()
-                elif dragon_choice == 2:
-                    print('Du: Drache     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Drache     Drache: Stein\n\n>>  Gewonnen!  <<\nDein Drache isst den Stein, er hatte wohl Appetit!\n\n')
-                    input()
-                elif dragon_choice == 3:
-                    print('Du: Drache     Drache: ???\n\n\n\n\n')
-                    time.sleep(2)
-                    new_screen()
-                    print('Du: Drache     Drache: Drache\n\n>>  Unentschieden!  <<\nDrache gegen Drache, da geht nix!\n\n')
-                    input()
-
-    elif choice == option2:
-        new_screen()
-        input('Dann halt nicht! :P')
+                time.sleep(3)
+            elif dragon_choice == 2:
+                print('Du: Drache     Drache: ???\n\n\n\n\n')
+                time.sleep(2)
+                new_screen()
+                print('Du: Drache     Drache: Stein\n\n>>  Gewonnen!  <<\nDein Drache isst den Stein, er hatte wohl Appetit!\n\n')
+                time.sleep(3)
+            elif dragon_choice == 3:
+                print('Du: Drache     Drache: ???\n\n\n\n\n')
+                time.sleep(2)
+                new_screen()
+                print('Du: Drache     Drache: Drache\n\n>>  Unentschieden!  <<\nDrache gegen Drache, da geht nix!\n\n')
+                time.sleep(3)
 
 def event(sleep, text):
     new_screen()
@@ -350,8 +345,7 @@ def event(sleep, text):
 
 
 #startup
-print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.0.9.2')
-
+print('/!\\ Wichtige Hinweise /!\\\n\n[1]   Es werden folgende Dinge empfohlen: \n      -> 16:9 Bildschirmformat \n      -> Vollbildmodus. Drücke dazu \"F11\". \n\n[2]   Bugs und Tippfehler können auftreten. \n      Bitte melde diese auf GitHub. (hyrulehamster/adventure-game) \n\n\nDas Spiel startet in wenigen Sekunden automatisch.  \n\n\n\n\n\n Ver.0.9.3')
 time.sleep(15)
 new_screen()
 loadingbar()
@@ -380,7 +374,7 @@ print('             Gebe nun deinen Namen ein.')
 playername = input('\n\n\n\n\n\n\n\n\n             >> ')
 new_screen()
 time.sleep(1)
-awating_input('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n ''            Um fortzufahren, tippe das folgendes korrekt ab:', 1, 'Verstanden', '', '', '')
+awating_input('Falls du deinen Namen ändern willst, öffne das Programm bitte erneut. \n             Um fortzufahren, tippe das folgendes korrekt ab: \n\n             PS: So sieht es aus, wenn du Entscheidungen triffst. \n             Achte darauf, dass du dich nicht verschreibst!', 1, 'Verstanden', '', '', '')
 if choice == option1:
     new_screen()
     time.sleep(2)
@@ -396,11 +390,12 @@ playername_aus = playername + str('!')
 
 if choice != option1:
     new_screen()
-    input('                     /!\ \n\nOh, damit haben wir wohl nicht gerechnet.\nAber immerhin hast du dieses nette Easter Egg gefunden.\n\nWenn du weiterspielen willst, musst du das Programm schließen,\n ansonsten könnten ungewollte Bugs entstehen.')
+    print('Hey, du da, du kleiner Rabauke!   Tipp das bei der nächsten Entscheidung gefälligst richtig ab!')
+    time.sleep(3.5)
     new_screen()
 
 
-print('Story beginnt. Hinweis: Dies ist ein nicht komplett vollständiger Build, erwarte also nicht zuviel :^)')
+
 time.sleep(2)
 new_screen()
 
@@ -426,9 +421,10 @@ if choice == option1:
 if choice == option2:
     time.sleep(1)
     new_screen()
-    event(4,'/!\\ Hier wurde wohl noch nicht weitergeschieben... Fang doch nochmal von vorne an.')
-    input('Bitte drücke \'Enter\'')
-    exit()
+    textbox(3, 'Professor E.', 'Jeder würde seinen Vater retten.', 'Komm schon, geb dir', 'nen Ruck.')
+    time.sleep(3)
+    textbox(2,'Professor E.','Ok!','Auf zur Drachenhöhle!','')
+    event(4.5,'Nach 2 Stunden kommst du zusammen mit dem Professor endlich an.')
 
 textbox(3,playername,'Oh...','Das ist wohl die Drachenhöhle, von','der mein Vater immer erzählte...')
 textbox(1,'Professor E.','Los!','','')
@@ -439,10 +435,10 @@ if choice == option1:
     event(3,'Du betrittst nun die Höhle, der Professor dicht hinter dir.')
 if choice == option2:
     time.sleep(1)
+    textbox(3, 'Professor E.', 'Echt jetzt?!', 'Los komm, wir gehen da', 'zusammen rein.')
+    time.sleep(2)
     new_screen()
-    event(4, '/!\\ Hier wurde wohl noch nicht weitergeschieben... Fang doch nochmal von vorne an.')
-    input('Bitte schließe das Programm.')
-    exit()
+    event(3,'Du betrittst nun die Höhle, der Professor dicht hinter dir.')
 
 textbox(3,'Professor E.','Der Drache scheint dich gar nicht','töten zu wollen!','')
 textbox(3,'Professor E.','Aber er wird dir deinen Vater', 'auch nicht so einfach her','wiedergeben.')
@@ -476,14 +472,12 @@ textbox(1.5, 'Professor E.', 'Schere, Stein, Drache...', '','')
 textbox(2.5, 'Professor E.', 'Schere, Stein, Drache...', 'Was soll das sein!?','')
 textbox(4, 'Professor E.', playername_kma, 'weißt du was das hier','überhaupt für eine Höhle ist?')
 textbox(0.5, playername, 'Mein Vater hat mir sehr oft','','')
-textbox(1, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Drachen-','')
-textbox(2.5, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Drachen-','höhle erzählt.')
-textbox(1, playername, 'Ich weiß alles über sie!', '','')
+textbox(1.5, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Drachen-','')
+textbox(3, playername, 'Mein Vater hat mir sehr oft', 'von der gefährlichen Drachen-','höhle erzählt.')
+textbox(1.5, playername, 'Ich weiß alles über sie!', '','')
 textbox(2, 'Drache', 'Also?','','')
 textbox(3, 'Drache', 'Also?','Bist du bereit,','zu verlieren?')
-
-awating_input('Möchtest du gegen den Drachen spielen?', 2, 'Ja', 'Nein','','')
-
+awating_input('Möchtest du gegen den Drachen spielen?', 2, 'Ja', 'Nein', '', '')
 if choice == option2:
     textbox(1.5, 'Drache', 'Pffff!','','')
     textbox(2.5, 'Drache', 'Pffff!', 'Was soll das denn', 'heißen?')
@@ -493,7 +487,7 @@ if choice == option1:
     textbox(2.5, 'Drache', 'Ok gut!', 'Dann lass mir kurz die Regeln', 'erklären.')
 
 textbox(2.5, 'Drache', 'Du musst 3 mal', 'nacheinander gewinnen,', '')
-textbox(2.5, 'Drache', 'aber wenn ich auch nur', '1 einziges Mal gewinne,')
+textbox(2.5, 'Drache', 'aber wenn ich auch nur', '1 einziges Mal gewinne,', '')
 textbox(2.5, 'Drache', 'hast du verloren!', '', '')
 textbox(1.5, 'Drache', 'Drache frisst Stein,','','')
 textbox(1.5, 'Drache', 'Schere sticht Drache ab,','','')
@@ -502,13 +496,16 @@ textbox(2, 'Drache', 'das kennst du ja', 'hoffentlich.','')
 event(3, 'Du trittst 2 Schritte vor')
 textbox(2.5, 'Drache', 'Dann lasst uns kämpfen!', '', '')
 
-dragonfight('v')
+dragonfight('v') #spieler soll gewinnen
+new_screen()
 textbox(1.5, 'Drache', 'Du scheinst dich ja', 'ganz gut zu schlagen.', '')
 textbox(2, 'Drache', 'Du scheinst dich ja', 'ganz gut zu schlagen.', 'Nächste Runde!')
-dragonfight('v')
+dragonfight('v') #spieler soll gewinnen
+new_screen()
 textbox(3, 'Drache', 'Grrrrr.....', '', '')
 textbox(1.5, 'Drache', 'Grrrrr.....', 'Letzte Runde!', '')
-dragonfight('d')
+dragonfight('d') #spieler soll verlieren
+new_screen()
 textbox(2, 'Drache', 'Tja...', '', '')
 textbox(3, 'Drache', 'Tja...', 'Ich wusste, dass ich', 'gewinnen werde!')
 
@@ -543,21 +540,26 @@ textbox(1.5, 'Professor E.', 'Walli...', '', '')
 textbox(1.5, 'Professor E.', 'Walli...', 'Er sieht aus wie eine', 'echte Wallnuss.')
 textbox(3.5, 'Professor E.', 'Er hat stolze 3 Mal die', 'Schere, Stein, Papier WM', 'gewonnen.')
 textbox(2.5, 'Professor E.', 'Beeindruckend,', 'nicht war?', '')
-awating_input('Wie stehst du dazu?', 4, 'Wow, das muss ein wahrer Profi sein!','Das kann doch jeder.','Aber... Schere, Stein, Drache ist doch so viel anders als Schere, Stein, Papier?','Haha, ne Wallnuss als Trainer!')
-if choice == option1:
+awating_input('Was sagst du dazu? \n\n(Du kannst auch 1, 2, 3 oder 4 antworten, für die jeweilige Entscheidung.)', 4, 'Wow, das muss ein wahrer Profi sein!','Das kann doch jeder.','Aber... Schere, Stein, Drache ist doch so viel anders als Schere, Stein, Papier?','Haha, ne Wallnuss als Trainer!')
+if choice == option1 or '1':
     textbox(2, 'Professor E.', 'Ja, das stimmt durchaus,', 'aber...', '')
     textbox(1, 'Professor E.', 'Schere, Stein, Papier', 'unterscheidet sich sehr', '')
     textbox(2, 'Professor E.', 'unterscheidet sich sehr', 'von Schere, Stein, Drache.', '')
-if choice == option2:
+if choice == option2 or '2':
     textbox(3.5, 'Professor E.', 'Na, sei mal nicht so.', 'Immerhin hast du ja', 'gar nicht mitgemacht, oder?')
-if choice == option3:
+if choice == option3 or '3':
     textbox(1.5, 'Professor E.', 'Da hast du Recht.', '', '')
 
-if choíce == option4:
+if choice == option4 or '4':
     textbox(3.5, 'Professor E.', 'Ja, schon komisch. Aber','du solltest dich nicht', 'über ihn lustig machen.')
 
 textbox(3, 'Professor E.', 'Ein Besuch bei ihm wäre', 'vielleicht trotzdem', 'ganz nützlich.')
 
 
-event(9, 'Ende der Story des Holiday Updates 2019. \n Falls du dir bereits die weitergeschiebene Story ansehen willst, \n besuche die Story-Script Seite in unserem GitHub Wiki.')
-event(15, 'Danke fürs spielen.')
+event(9, 'Ende der Story des Holiday Updates 2019, Patch 3. \n Falls du dir bereits die weitergeschiebene Story ansehen willst, \n besuche die Story-Script Seite in unserem GitHub Wiki.')
+event(4, 'Writer & Storyboard \n\n Joel')
+event(4, 'Story implementation & Additional Backend Development \n\n Marcel')
+event(4, 'Backend Development & GitHub things\n\n Niklas ')
+time.sleep(3)
+print('Danke fürs spielen.')
+input()
